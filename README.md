@@ -1,9 +1,12 @@
 # Agent_Model_1
-
 This is a agent based model. This model simulates agents, moving around a environment from either set starting point downloaded from xxx 
 or random starting points. The Agents then move around the environment 'nibbling' at it and then storing this in the stores. The Agents are able
 to share resources dependent on the location and how much they all ready have stored. The Resulting model is displayed on a GUI and a text file called 
 'Agents' allocated each Agent a ID and shows the location 'x' and 'y' coordiantes and the amount of environment in there store. 
+
+# # Licensing 
+This software is licensined using a MIT License. More infromation is available in the license.txt file 
+
 
 # # Files 
 'Model.py' - File to run the model, generate GUI and write files. 
@@ -25,4 +28,7 @@ to share resources dependent on the location and how much they all ready have st
 
 # # Issues 
 1) Wolf frame work is not yet complete. When a wolf would eat an agents, within the defined neigbourhood distance, eat agent is printed
-2) End of model is printed 
+2) End of model is printed multiple times. 
+
+# # Future Development 
+1) 
