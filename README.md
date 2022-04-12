@@ -9,9 +9,9 @@ This software is licensined using a MIT License. More infromation is available i
 
 
 # # Files 
-'Model.py' - File to run the model, generate GUI and write files. 
-'agent_framework.py' - agent class containg all the fuctions relating the agents: move, eat, self, distance_between, share_with neighboroughs
-'wolf_framework.py' - wolf class containing all the functions relating to moving the wolf: move(2), wolf_distance, eat_agent 
+1) 'Model.py' - File to run the model, generate GUI and write files. 
+2) 'agent_framework.py' - agent class containg all the fuctions relating the agents: move, eat, self, distance_between, share_with neighboroughs
+3) 'wolf_framework.py' - wolf class containing all the functions relating to moving the wolf: move(2), wolf_distance, eat_agent 
 
 
 # # How to Run the Model:
