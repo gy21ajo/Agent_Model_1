@@ -124,8 +124,9 @@ def update(frame_number):
     for i in range(len(agents)):
         agents[i].move()
         agents[i].eat()
-        agents[i].share_with_neighbours(neighbourhood) 
-        f3.write(str(agents[i]))
+        agents[i].share_with_neighbours(neighbourhood)
+        f3.write((str(agents[i]))
+        
 #move the wolf around
     for w in range(num_of_wolfs):
         wolfs[w].move2()
