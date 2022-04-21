@@ -26,6 +26,13 @@ This software is licensined using a MIT License. More infromation is available i
 1) 'agents.txt' a text file containg the 'id' of each agennt. For each iteration and each agent the x, and y, locations and amount in the store is shown. 
 2) A animation of the agents moving around the environment and 
 
+# # Testing 
+Two files were produced during testing: 
+  agents.txt
+  wolf.txt
+For each itteration the  agents  'id' number assocaited with, x and y location, and amount within the store is written in the text file. This shows that model is workig if the values are changing.  
+
+
 # # Issues 
 1) Wolf frame work is not yet complete. When a wolf would eat an agents, within the defined neigbourhood distance, eat agent is printed
 2) End of model is printed multiple times. 
