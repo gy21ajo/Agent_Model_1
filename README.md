@@ -1,8 +1,6 @@
 # Agent_Model_1
 This is a agent based model. This model simulates agents, moving around a environment from either set starting point downloaded from xxx 
-or random starting points. The Agents then move around the environment 'nibbling' at it and then storing this in the stores. The Agents are able
-to share resources dependent on the location and how much they all ready have stored. The Resulting model is displayed on a GUI and a text file called 
-'Agents' allocated each Agent a ID and shows the location 'x' and 'y' coordiantes and the amount of environment in there store. 
+or random starting points. The Agents then move around the environment 'nibbling' at it and then storing this in thier stores. If the agents eat over 100 stores, they are 'sick'. The Agents are able to share resources dependent on the location and how much they all ready have stored. The Resulting model is displayed on a GUI and a text file called 'Agents' allocated each Agent a ID and shows the location 'x' and 'y' coordiantes and the amount of environment in there store. 
 
 # # Licensing 
 This software is licensined using a MIT License. More infromation is available in the license.txt file 
