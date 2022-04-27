@@ -1,3 +1,6 @@
+# Created by Adam Odell, MIT License. V.1.0
+# This file contains the Class agents, and all the functions relating to moving, eating and sharing. 
+
 import random
 
 class Agent: 
