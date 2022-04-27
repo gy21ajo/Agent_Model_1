@@ -1,6 +1,13 @@
 # Agent_Model_1
-This is a agent based model. This model simulates agents, moving around a environment from either set starting point downloaded from xxx 
-or random starting points. The Agents then move around the environment 'nibbling' at it and then storing this in thier stores. If the agents eat over 100 stores, they are 'sick'. The Agents are able to share resources dependent on the location and how much they all ready have stored. The Resulting model is displayed on a GUI and a text file called 'Agents' allocated each Agent a ID and shows the location 'x' and 'y' coordiantes and the amount of environment in there store. 
+This is a agent based model. This model simulates agents, moving around a environment, eating it and interacting with eachother and wolfs.
+The Model:
+  -Creates a environment in which the agents can eat from in.txt file
+  -Moves the agents from the starting location
+  -Allows the agents to eat the environment - and 'sick this up' if too much is eaten
+  -Allows the agents to share with each other if there store is greater then 10 or steal from other          agents if it is less then 10
+  -Creates wolfs which move round the environment and print 'Eat' in a document if they are in the          correct distance (needs more development)
+  -Displays this animated on a GUI
+
 
 # # Licensing 
 This software is licensined using a MIT License. More infromation is available in the license.txt file 
@@ -27,16 +34,15 @@ This software is licensined using a MIT License. More infromation is available i
 3) 'agents.txt' a text file containg the 'id' of each agennt. For each iteration and each agent the x, and y, locations and amount in the store is shown. 
 
 # # Testing 
-Testing was completed throughout the process to make sure the model is running as required, predomintley through the use of print functions which have been commented out in the final version.
+Testing was completed throughout the process to make sure the model is running as required through the use of print functions which have been commented out in the final version.
 During running of the model two text files 'agents.txt' and 'wolf.txt' are produced for testing purposes.
 'Agent.txt' shows for  each itteration the  agents  'id' number assocaited with, x and y location, and amount within the store is written in the text file. 
-'wolf.text' shows for each itteration the wolfs 'id' and x and y locations.
-The text files can be used to show the values are changing and the model is working.
+'wolf.text' shows the word 'Eat' printed to show if the eat function is working.
 
 # # Issues 
-1) Wolf frame work is not yet complete. When a wolf would eat an agents, within the defined neigbourhood distance, eat agent is printed. The final out would then remove this agent from the model. 
+1) Wolf frame work is not yet complete.  
 2) End of model is printed twice
 
 # # Future Development 
-1) Completion of the wolf framework directive. When a wolf distance is equal to or less than neighbourhood to agent, this agent is delted and removed from the model. 
-2) Better writing of the test files used for testing. For example sorting by 'id' smallest to largest and writing to a new line for each itteration. 
+1) Completion of the wolf framework directive. When a wolf distance is equal to or less than neighbourhood to agent, this agent is deleted and removed from the model. 
+2) Better writing of the test files. Sorting by id and printing on a new line each iteration. 
