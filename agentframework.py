@@ -1,7 +1,7 @@
 import random
 
 class Agent: 
-    """This class contains function for moving the Agent """        
+    """This class contains function for moving the Agent, eating the environment, seeing distance between agents, and sharing with neighboroughs """        
     def __init__(self, environment, agents, y, x, ia, wolfs):#self can only operate inside the agents data
         self.environment = environment
         #set starting location
@@ -91,7 +91,7 @@ class Agent:
     
     def share_with_neighbours(self, neighbourhood):
         """
-        This function allows 
+        This function allows agents to a share there resources if they are in the neighboorhood distance. If there store is greater then 10 they will share, if it is less then they will steal of the agents resources
 
         Parameters
         ----------
@@ -107,7 +107,7 @@ class Agent:
             distance = self.distance_between(agents)
                 
             if distance <= neighbourhood:
-                if self.store <= 10:
+                if self.store >= 10:
                     sum = self.store + agents.store
                     ave = sum /2
                     self.store = ave
@@ -127,4 +127,3 @@ class Agent:
     #         if wolfdistance < neighbourhood:
     #             return 1
 #test comment
-    
