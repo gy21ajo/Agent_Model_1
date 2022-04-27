@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
-#Agent Based Model, This file runs the model.
+# Created by Adam Odell, MIT License. V.1.0
+#Agent Based Model, This file runs the model, produces the GUI, and animates the model and writes the files. 
 
 import matplotlib
 matplotlib.use('TkAgg')
