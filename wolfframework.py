@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
-
+# Created by Adam Odell, MIT License. V.1.0
+# This file contains the Wolf class and all the functions realting to moving the wolf and wolf-agent interactions. 
 
 import random
 
