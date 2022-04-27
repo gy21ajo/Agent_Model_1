@@ -1,9 +1,5 @@
 # -*- coding: utf-8 -*-
-"""
-Spyder Editor
-This is a temporary script file.
-"""
-
+#Agent Based Model, This file runs the model.
 
 import matplotlib
 matplotlib.use('TkAgg')
@@ -78,12 +74,6 @@ f.close() 	# Don't close until you are done with the reader;
 		# the data is read on request.
 
 
-#setting number of agents
-# num_of_agents = 150
-# num_of_iterations = 10
-# neighbourhood = 5
-# num_of_wolfs = 1
-
 #setting number of agents 
 num_of_agents = args.num_of_agents
 num_of_iterations = args.num_of_iterations
@@ -94,7 +84,7 @@ num_of_wolfs = args.num_of_wolf
 agents = []
 wolfs = []
 
-#Make the agents using values from the internet or random 
+#Make the agents using values from the internet or random if there are more agents then values
 for i in range(num_of_agents):
     if  num_of_agents <= 100:
         y = int(td_ys[i].text)
@@ -120,31 +110,22 @@ def update(frame_number):
     fig.clear()
     global carry_on
 
-#move the agents and eat the environmentfor j in range(num_of_iterations):
+#move the agents and eat the environmentfor j in range(num_of_iterations) and write file:
     for i in range(len(agents)):
         agents[i].move()
         agents[i].eat()
         agents[i].share_with_neighbours(neighbourhood) 
         f3.write(str(agents[i]))
         f3.flush()
-#move the wolf around
+#move the wolf around and get wolfs to display when they might 'Eat'
     for w in range(num_of_wolfs):
         wolfs[w].move2()
-        # kill = wolfs[w].eat_agent(neighbourhood,agents)
-        # if kill == 1:
-        #     print("Eat")
-        
-    # for i in range(len(agents)):
-    #     wdistance = agents[i].wolf_distnace(neighbourhood,agents)
-    #         if wdistance < neighbourhood:
-    #             agents.index()
-    
-            
-        
-        
+        kill = wolfs[w].eat_agent(neighbourhood,agents)
+        if kill == 1:
+            f4.write('Eat')
+            f4.flush()
         random.shuffle(wolfs)
-        
-#wolf eats the sheep
+
     
     if random.random() < 0.1:
         cary_on = False
@@ -161,7 +142,7 @@ def update(frame_number):
     for w in range(num_of_wolfs):
         matplotlib.pyplot.scatter(wolfs[w].x,wolfs[w].y, color="GREY")
   
-    #not sure what this does
+    
 def gen_function(b = [0]):
     a = 0
     global carry_on #Not actually needed as we're not assigning, but clearer
@@ -173,3 +154,5 @@ def gen_function(b = [0]):
 tkinter.mainloop() 
 f3.close()
 f4.close()
+
+
